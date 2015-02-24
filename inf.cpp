@@ -1,0 +1,15 @@
+#include <stdio.h>
+
+int main()
+{
+int i,j;
+for (i=0;i<4;i++)
+	for (j=0;j<4;j++)
+		if (i==j)
+			printf("%d %d 0\n",i+1,j+1);
+		else if (j>i)
+			printf("%d %d 1\n",i+1,j+1);
+		else printf("%d %d 0\n",i+1,j+1);
+
+	return 0;
+}
